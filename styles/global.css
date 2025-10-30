@@ -2,15 +2,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Radley', sans-serif;
 }
 
 :root {
-    --font-family: 'Radley', sans-serif;
-    
     --text-fin: #15803d;
     --text-track: #0f4331;
     --text-primary: #000000;
 
     --background-primary: #ecfdf5;
     --semantic-error: #DC2626;
+}
+
+body {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: var(--text-track);
+    color: var(--background-primary);
+}
+
+nav a {
+    color: var(--background-primary);
+    text-decoration: none;
+    font-weight: 500;
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+.logo-nav {
+    font-size: 1.3rem;
+    font-weight: 600;
 }
