@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: 'Radley', sans-serif;
+    
+    --text-fin: #15803d;
+    --text-track: #0f4331;
+    --text-primary: #000000;
+
+    --background-primary: #ecfdf5;
+    --semantic-error: #DC2626;
+}
