@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Radley', sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.resultado {
+    background: #fff;
+    padding: 2rem 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: left;
+}
+
+.resultado h1 {
+    color: var(--text-track);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+#dados-despesa p {
+    margin-bottom: 0.8rem;
+    color: var(--text-primary);
+    font-size: 1.05rem;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1.5rem;
+    background: linear-gradient(135deg, var(--text-fin), var(--text-track));
+    color: var(--text-secondary);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
