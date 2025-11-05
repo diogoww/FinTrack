@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTrack | Cadastre Suas Despesas!</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <main>
+        <form id="despesasForm" action="formAction.html" method="get">
+            <div class="input-box">
+                <p>Despesa:</p>
+                <input type="text" id="nome" name="nome" placeholder="Nome da Despesa" required minlength="3" maxlength="100">
+
+                <p>Data da Despesa:</p>
+                <input type="date" id="data" name="data" required>
+
+                <p>Valor da Despesa:</p>
+                <div class="valorContainer">
+                    <span class="prefixo">R$</span>
+                    <input type="number" id="valor" name="valor" placeholder="Ex: 19,00" required inputmode="decimal" pattern="^\d+([,\.]\d{1,2})?$">
+                </div>
+            </div>
+
+            <p>Descrição da Despesa:</p>
+            <textarea name="descricao" id="descricao" cols="30" rows="5" placeholder="Ex: Gasto de 19 reais com Delivery" required minlength="10" maxlength="1000"></textarea>
+            <input type="submit" value="Cadastrar!" class="btn">
+        </form>
+    </main>
+</body>
+</html>
