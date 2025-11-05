@@ -1,0 +1,67 @@
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.titulo-fintrack .fin {
+    font-size: 2rem;
+}
+
+.titulo-fintrack .track {
+    font-size: 2rem;
+}
+
+.info-fintrack {
+    background: #fff;
+    padding: 2rem 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    text-align: center;
+}
+
+.info-fintrack h1 {
+    color: var(--text-track);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.info-fintrack p {
+    font-size: 1.05rem;
+    color: var(--text-primary);
+    line-height: 1.5rem;
+}
+
+.info-fintrack p strong {
+    color: var(--text-track);
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background: linear-gradient(135deg, var(--text-fin), var(--text-track));
+    color: var(--text-secondary);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s transfor, 0.3s opacity;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
