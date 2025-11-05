@@ -21,10 +21,9 @@
                     <span class="prefixo">R$</span>
                     <input class="input-field" type="number" id="valor" name="valor" placeholder="Ex: 19,00" required inputmode="decimal" pattern="^\d+([,\.]\d{1,2})?$">
                 </div>
+                <label for="descricao">Descrição da Despesa:</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="5" placeholder="Ex: Gasto de 19 reais com Delivery" required minlength="10" maxlength="1000"></textarea>
             </div>
-
-            <label for="descricao">Descrição da Despesa:</label>
-            <textarea name="descricao" id="descricao" cols="30" rows="5" placeholder="Ex: Gasto de 19 reais com Delivery" required minlength="10" maxlength="1000"></textarea>
             <input type="submit" value="Cadastrar!" class="btn">
         </form>
     </main>
