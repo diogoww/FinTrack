@@ -54,7 +54,7 @@ form textarea {
     width: 100%;
     height: auto;
     min-height: 6rem;
-    resize: vertical;
+    resize: none;
     padding: 0.7rem 1rem;
     border: 1px solid #ccc;
     border-radius: 8px;
