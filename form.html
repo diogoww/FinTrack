@@ -10,20 +10,20 @@
     <main>
         <form id="despesasForm" action="formAction.html" method="get">
             <div class="input-box">
-                <p>Despesa:</p>
-                <input type="text" id="nome" name="nome" placeholder="Nome da Despesa" required minlength="3" maxlength="100">
+                <label for="nome">Despesa:</label>
+                <input class="input-field" type="text" id="nome" name="nome" placeholder="Nome da Despesa" required minlength="3" maxlength="100">
 
-                <p>Data da Despesa:</p>
-                <input type="date" id="data" name="data" required>
+                <label for="data">Data da Despesa:</label>
+                <input class="input-field" type="date" id="data" name="data" required>
 
-                <p>Valor da Despesa:</p>
-                <div class="valorContainer">
+                <label for="valor">Valor da Despesa:</label>
+                <div class="valor-container">
                     <span class="prefixo">R$</span>
-                    <input type="number" id="valor" name="valor" placeholder="Ex: 19,00" required inputmode="decimal" pattern="^\d+([,\.]\d{1,2})?$">
+                    <input class="input-field" type="number" id="valor" name="valor" placeholder="Ex: 19,00" required inputmode="decimal" pattern="^\d+([,\.]\d{1,2})?$">
                 </div>
             </div>
 
-            <p>Descrição da Despesa:</p>
+            <label for="descricao">Descrição da Despesa:</label>
             <textarea name="descricao" id="descricao" cols="30" rows="5" placeholder="Ex: Gasto de 19 reais com Delivery" required minlength="10" maxlength="1000"></textarea>
             <input type="submit" value="Cadastrar!" class="btn">
         </form>
